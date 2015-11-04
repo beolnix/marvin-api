@@ -3,10 +3,10 @@ API of [marvin](https://github.com/beolnix/marvin-core) bot.
 You need this API if you are going to create a plugin for marvin bot or if you want to add support of new IM protocol for [maven-core](https://github.com/beolnix/marvin-core/).
 
 ## Project details
-| Version | State | Code link
-| --- | --- | --- |
-| 0.1 | Stable | [0.1-release](https://github.com/beolnix/marvin-api/releases/tag/0.1-release)
-| 0.2-SNAPSHOT | In dev | [master](https://github.com/beolnix/marvin-api/)
+| Version | State | Code link | Binaries
+| --- | --- | --- | --- |
+| 0.1 | Stable | [0.1-release](https://github.com/beolnix/marvin-api/releases/tag/0.1-release) | [api-0.1.jar](http://nexus.beolnix.com/service/local/repositories/releases/content/com/beolnix/marvin/api/0.1/api-0.1.jar) |
+| 0.2-SNAPSHOT | In dev | [master](https://github.com/beolnix/marvin-api/) | |
 
 ## Requirements
 #### To run
