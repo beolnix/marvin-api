@@ -1,0 +1,54 @@
+apply plugin: 'maven'
+apply plugin: 'groovy'
+apply plugin: 'idea'
+
+def JAVA_VERSION = '1.8'
+ext.JAXB_VERSION = '2.1'
+ext.JUNIT_VERSION = '4.12'
+ext.GROOVY_VERSION = '2.4.4'
+
+sourceCompatibility = JAVA_VERSION
+targetCompatibility = JAVA_VERSION
+System.setProperty("file.encoding", "UTF-8")
+
+project.group = 'com.beolnix.marvin'
+project.version = '0.1'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            if (version.toString().endsWith("SNAPSHOT")) {
+                repository(url: "http://nexus.beolnix.com/content/repositories/snapshots/") {
+                    authentication(userName: System.getenv()['REPO_USER'], password: System.getenv()['REPO_SNAPSHOT_PASSWORD'])
+                }
+            } else {
+                repository(url: "http://nexus.beolnix.com/content/repositories/releases/") {
+                    authentication(userName: System.getenv()['REPO_USER'], password: System.getenv()['REPO_RELEASE_PASSWORD'])
+                }
+            }
+            pom.version = version
+            pom.artifactId = "api"
+            pom.groupId = project.group
+        }
+    }
+}
+
+configurations { provided }
+
+sourceSets {
+    main { compileClasspath += configurations.provided }
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+
+    compile "org.codehaus.groovy:groovy-all:${GROOVY_VERSION}"
+    compile "javax.xml:jaxb-api:${JAXB_VERSION}"
+
+    testCompile "junit:junit:${JUNIT_VERSION}"
+
+}
