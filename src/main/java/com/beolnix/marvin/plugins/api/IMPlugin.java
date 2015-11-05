@@ -17,8 +17,11 @@ public interface IMPlugin {
 
     String getPluginName();
 
-    Boolean isProcessAll();
+    boolean isProcessAll();
+
     List<String> getCommandsList();
+
+    boolean isCommandSupported(String command);
 
     void process(IMIncomingMessage msg);
 
