@@ -5,7 +5,7 @@ import java.util.Calendar;
 /**
  * Created by DAtmakin on 11/3/2015.
  */
-public class IMMessageIncomingBuilder {
+public class IMIncomingMessageBuilder {
     private String rawMessageBody;
     private String botName;
     private boolean conference;
@@ -19,59 +19,59 @@ public class IMMessageIncomingBuilder {
     private String commandAttributes;
     private String commandSymbol;
 
-    public IMMessageIncomingBuilder() {}
+    public IMIncomingMessageBuilder() {}
 
-    public IMMessageIncomingBuilder withRawMessageBody(String rawMessageBody) {
+    public IMIncomingMessageBuilder withRawMessageBody(String rawMessageBody) {
         this.rawMessageBody = rawMessageBody;
         return this;
     }
 
-    public IMMessageIncomingBuilder withBotName(String botName) {
+    public IMIncomingMessageBuilder withBotName(String botName) {
         this.botName = botName;
         return this;
     }
 
-    public IMMessageIncomingBuilder withConference(boolean conference) {
+    public IMIncomingMessageBuilder withConference(boolean conference) {
         this.conference = conference;
         return this;
     }
 
-    public IMMessageIncomingBuilder withConferenceName(String conferenceName) {
+    public IMIncomingMessageBuilder withConferenceName(String conferenceName) {
         this.conferenceName = conferenceName;
         return this;
     }
 
-    public IMMessageIncomingBuilder withProtocol(String protocol) {
+    public IMIncomingMessageBuilder withProtocol(String protocol) {
         this.protocol = protocol;
         return this;
     }
 
-    public IMMessageIncomingBuilder withAutor(String autor) {
+    public IMIncomingMessageBuilder withAutor(String autor) {
         this.author = autor;
         return this;
     }
 
-    public IMMessageIncomingBuilder withTimestamp(Calendar timestamp) {
+    public IMIncomingMessageBuilder withTimestamp(Calendar timestamp) {
         this.timestamp = timestamp;
         return this;
     }
 
-    public IMMessageIncomingBuilder withCommandName(String commandName) {
+    public IMIncomingMessageBuilder withCommandName(String commandName) {
         this.commandName = commandName;
         return this;
     }
 
-    public IMMessageIncomingBuilder withCommand(boolean command) {
+    public IMIncomingMessageBuilder withCommand(boolean command) {
         this.command = command;
         return this;
     }
 
-    public IMMessageIncomingBuilder withCommandAttributes(String commandAttributes) {
+    public IMIncomingMessageBuilder withCommandAttributes(String commandAttributes) {
         this.commandAttributes = commandAttributes;
         return this;
     }
 
-    public IMMessageIncomingBuilder withCommandSymbol(String commandSymbol) {
+    public IMIncomingMessageBuilder withCommandSymbol(String commandSymbol) {
         this.commandSymbol = commandSymbol;
         return this;
     }
