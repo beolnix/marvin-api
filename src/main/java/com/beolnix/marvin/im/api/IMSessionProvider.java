@@ -16,7 +16,7 @@ public interface IMSessionProvider {
      * @param pluginsManager
      * @return
      */
-    IMSession getNewSession(BotSettings botSettings, PluginsManager pluginsManager);
+    IMSession createNewSession(BotSettings botSettings, PluginsManager pluginsManager);
 
     /**
      * Returns the name of supported protocol
