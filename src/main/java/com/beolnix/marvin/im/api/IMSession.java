@@ -1,5 +1,7 @@
 package com.beolnix.marvin.im.api;
 
+import com.beolnix.marvin.im.api.model.IMOutgoingMessage;
+
 /**
  * Basic interface for all IM Sessions supported by marvin-core.
  * IM Session is a bot instance actually. It establishes one connection,

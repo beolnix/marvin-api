@@ -1,4 +1,4 @@
-package com.beolnix.marvin.im.api;
+package com.beolnix.marvin.im.api.model;
 
 import java.util.Calendar;
 

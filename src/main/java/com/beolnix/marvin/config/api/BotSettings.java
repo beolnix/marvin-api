@@ -1,5 +1,7 @@
 package com.beolnix.marvin.config.api;
 
+import com.beolnix.marvin.config.api.model.Property;
+
 import java.util.List;
 
 /**

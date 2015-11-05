@@ -1,6 +1,8 @@
 package com.beolnix.marvin.config.api;
 
 import com.beolnix.marvin.config.api.error.ConfigurationException;
+import com.beolnix.marvin.config.api.model.Configuration;
+import com.beolnix.marvin.config.api.model.PluginsSettings;
 
 
 import java.util.Map;

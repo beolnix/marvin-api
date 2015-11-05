@@ -1,6 +1,7 @@
 package com.beolnix.marvin.im.api;
 
 import com.beolnix.marvin.config.api.error.ConfigurationException;
+import com.beolnix.marvin.im.api.model.IMOutgoingMessage;
 import com.beolnix.marvin.plugins.api.PluginsManager;
 
 import java.util.Map;

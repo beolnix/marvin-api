@@ -1,6 +1,6 @@
 package com.beolnix.marvin.plugins.api;
 
-import com.beolnix.marvin.im.api.IMIncomingMessage;
+import com.beolnix.marvin.im.api.model.IMIncomingMessage;
 
 /**
  * Basic interface of core service - PluginsManager

@@ -1,7 +1,7 @@
 package com.beolnix.marvin.plugins.api;
 
 import com.beolnix.marvin.im.api.IMSessionManager;
-import com.beolnix.marvin.im.api.IMIncomingMessage;
+import com.beolnix.marvin.im.api.model.IMIncomingMessage;
 
 import java.util.List;
 import java.util.Set;
