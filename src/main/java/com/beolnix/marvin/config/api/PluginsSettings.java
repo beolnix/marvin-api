@@ -26,6 +26,7 @@ public class PluginsSettings {
     private String tmpPath;
     private String logsPath;
     private String dirPath;
+    
 
     @Override
     public String toString() {

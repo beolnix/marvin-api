@@ -1,8 +1,6 @@
 package com.beolnix.marvin.config.api;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.*;
 
 /**
  * Created by beolnix on 31/10/15.
@@ -13,7 +11,7 @@ public class Property {
     @XmlAttribute
     private String name;
 
-    @XmlAttribute
+    @XmlValue
     private String value;
 
     public Property() {}

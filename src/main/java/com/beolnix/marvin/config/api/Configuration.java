@@ -20,11 +20,15 @@ public class Configuration {
     @XmlElement(required= true)
     private PluginsSettings pluginSettings;
 
+    @XmlElement(name = "webPlugin")
+    private List<WebPlugin> webPlugins = new ArrayList<>();
+
     @Override
     public String toString() {
         return "Configuration{" +
                 "bots=" + bots +
                 ", pluginSettings=" + pluginSettings +
+                ", webPlugins=" + webPlugins +
                 '}';
     }
 
@@ -42,5 +46,13 @@ public class Configuration {
 
     public void setPluginSettings(PluginsSettings pluginSettings) {
         this.pluginSettings = pluginSettings;
+    }
+
+    public List<WebPlugin> getWebPlugins() {
+        return webPlugins;
+    }
+
+    public void setWebPlugins(List<WebPlugin> webPlugins) {
+        this.webPlugins = webPlugins;
     }
 }
