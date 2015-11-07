@@ -20,21 +20,15 @@ public class Configuration {
     @XmlElement(required= true)
     private PluginsSettings pluginSettings;
 
-    @XmlElement(name = "webPlugin")
-    private List<WebPlugin> webPlugins = new ArrayList<>();
-
-    @XmlElement(name = "webPluginDiscoveryService")
-    private List<WebPluginsDiscoveryService> webPluginsDiscoveryServices = new ArrayList<>();
-
     @Override
     public String toString() {
         return "Configuration{" +
                 "bots=" + bots +
                 ", pluginSettings=" + pluginSettings +
-                ", webPlugins=" + webPlugins +
-                ", webPluginsDiscoveryServices=" + webPluginsDiscoveryServices +
                 '}';
     }
+
+
 
     public List<Bot> getBots() {
         return bots;
@@ -52,19 +46,4 @@ public class Configuration {
         this.pluginSettings = pluginSettings;
     }
 
-    public List<WebPlugin> getWebPlugins() {
-        return webPlugins;
-    }
-
-    public void setWebPlugins(List<WebPlugin> webPlugins) {
-        this.webPlugins = webPlugins;
-    }
-
-    public List<WebPluginsDiscoveryService> getWebPluginsDiscoveryServices() {
-        return webPluginsDiscoveryServices;
-    }
-
-    public void setWebPluginsDiscoveryServices(List<WebPluginsDiscoveryService> webPluginsDiscoveryServices) {
-        this.webPluginsDiscoveryServices = webPluginsDiscoveryServices;
-    }
 }
