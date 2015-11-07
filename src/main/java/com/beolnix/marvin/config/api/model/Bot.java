@@ -1,4 +1,6 @@
-package com.beolnix.marvin.config.api;
+package com.beolnix.marvin.config.api.model;
+
+import com.beolnix.marvin.config.api.BotSettings;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

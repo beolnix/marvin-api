@@ -1,4 +1,4 @@
-package com.beolnix.marvin.config.api;
+package com.beolnix.marvin.config.api.model;
 
 import javax.xml.bind.annotation.*;
 

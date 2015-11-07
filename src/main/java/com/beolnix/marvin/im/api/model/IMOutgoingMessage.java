@@ -1,4 +1,4 @@
-package com.beolnix.marvin.im.api;
+package com.beolnix.marvin.im.api.model;
 
 /**
  * Created by DAtmakin on 11/3/2015.
