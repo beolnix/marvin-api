@@ -25,7 +25,7 @@ public class WebPluginsDiscoveryService {
 
     @Override
     public String toString() {
-        return "WebPlugin{" +
+        return "WebPluginsDiscoveryService{" +
                 "name='" + name + '\'' +
                 ", url='" + url + '\'' +
                 '}';
