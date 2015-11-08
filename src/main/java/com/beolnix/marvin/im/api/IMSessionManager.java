@@ -16,7 +16,7 @@ public interface IMSessionManager {
      * Sends message
      * @param outMsg
      */
-    void sendMessage(IMOutgoingMessage outMsg);
+    void sendMessage(IMOutgoingMessage... outMsg);
 
     /**
      * Registers new IMSessionProvider.
