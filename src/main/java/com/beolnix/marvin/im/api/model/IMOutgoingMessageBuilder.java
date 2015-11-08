@@ -21,6 +21,7 @@ public class IMOutgoingMessageBuilder {
             this.conferenceName = imIncomingMessage.getConferenceName();
         }
         this.protocol = imIncomingMessage.getProtocol();
+        this.recepient = imIncomingMessage.getAuthor();
     }
 
     public IMOutgoingMessageBuilder withRawMessageBody(String rawMessageBody) {
