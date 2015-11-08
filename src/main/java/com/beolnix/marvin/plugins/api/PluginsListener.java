@@ -22,6 +22,6 @@ public interface PluginsListener {
      * Method is executed by PluginProvider if it catch error during plugin registration
      * @param
      */
-    void onError(Throwable e);
+    void onError(String pluginName, Throwable e);
 
 }
