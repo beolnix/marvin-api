@@ -14,7 +14,7 @@ public interface PluginsListener {
 
     /**
      * Method is executed by PluginProvider if it unregistered the plugin
-     * @param imPluaddgin
+     * @param imPlugin
      */
     void undeployPlugin(IMPlugin imPlugin);
 
