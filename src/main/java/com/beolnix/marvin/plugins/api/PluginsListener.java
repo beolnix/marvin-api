@@ -7,15 +7,21 @@ package com.beolnix.marvin.plugins.api;
 public interface PluginsListener {
 
     /**
-     * Method should be executed by PluginProvider if it registered new plugin
+     * Method is executed by PluginProvider if it registered new plugin
      * @param imPlugin
      */
     void deployPlugin(IMPlugin imPlugin);
 
     /**
-     * Method should be executed by PluginProvider if it unregistered the plugin
-     * @param imPlugin
+     * Method is executed by PluginProvider if it unregistered the plugin
+     * @param imPluaddgin
      */
     void undeployPlugin(IMPlugin imPlugin);
+
+    /**
+     * Method is executed by PluginProvider if it catch error during plugin registration
+     * @param
+     */
+    void onError(Throwable e);
 
 }
