@@ -18,7 +18,7 @@ uploadArchives {
     repositories {
         mavenDeployer {
             pom.version = version
-            pom.artifactId = project.name
+            pom.artifactId = "marvin-api"
             pom.groupId = project.group
 
             if (version.toString().endsWith("SNAPSHOT")) {
