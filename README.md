@@ -1,5 +1,5 @@
 ## Project description
-API of [marvin](https://github.com/beolnix/marvin-core) bot. 
+API of [marvin](https://github.com/beolnix/marvin) bot. 
 You need this API if you are going to create a plugin for marvin bot or if you want to add support of new IM protocol for [maven-core](https://github.com/beolnix/marvin-core/).
 
 ## Project details
@@ -67,4 +67,4 @@ dependencies {
 
 ## Usage example
 * [maven-echo-plugin](https://github.com/beolnix/marvin-echo-plugin) - example of API usage in marvin echo-plugin
-* [irc-im-session](https://github.com/beolnix/marvin-core/tree/master/im-sessions/irc-im-session) - example of API usage in IRC IM Session. This one adds support of IRC protocol to marvin-core
+* [irc-im-session](https://github.com/beolnix/marvin/tree/master/im-sessions/marvin-irc-im-session) - example of API usage in IRC IM Session. This one adds support of IRC protocol to marvin-core
