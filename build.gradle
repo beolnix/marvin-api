@@ -17,6 +17,10 @@ project.version = '0.2-SNAPSHOT'
 uploadArchives {
     repositories {
         mavenDeployer {
+            pom.version = version
+            pom.artifactId = project.name
+            pom.groupId = project.group
+
             if (version.toString().endsWith("SNAPSHOT")) {
                 repository(url: "http://nexus.beolnix.com/content/repositories/snapshots/") {
                     authentication(userName: System.getenv()['REPO_USER'], password: System.getenv()['REPO_SNAPSHOT_PASSWORD'])
@@ -26,9 +30,6 @@ uploadArchives {
                     authentication(userName: System.getenv()['REPO_USER'], password: System.getenv()['REPO_RELEASE_PASSWORD'])
                 }
             }
-            pom.version = version
-            pom.artifactId = "api"
-            pom.groupId = project.group
         }
     }
 }
