@@ -1,6 +1,6 @@
 ## Project description
 API of [marvin](https://github.com/beolnix/marvin) bot. 
-You need this API if you are going to create a plugin for marvin bot or if you want to add support of new IM protocol for [maven-core](https://github.com/beolnix/marvin-core/).
+You need this API if you are going to create a plugin for marvin bot or if you want to add support of new IM protocol.
 
 ## Project details
 | Version | State | Code link | Binaries
