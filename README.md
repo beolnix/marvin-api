@@ -5,7 +5,7 @@ You need this API if you are going to create a plugin for marvin bot or if you w
 ## Project details
 | Version | State | Code link | Binaries
 | --- | --- | --- | --- |
-| 0.2 | Stable | [0.2-release](https://github.com/beolnix/marvin-api/releases/tag/0.2-release) | [api-0.2.jar](http://nexus.beolnix.com/service/local/repositories/releases/content/com/beolnix/marvin/api/0.2/api-0.2.jar) |
+| 0.2 | Stable | [0.2-release](https://github.com/beolnix/marvin-api/releases/tag/0.2-release) | [marvin-api-0.2.jar](http://nexus.beolnix.com/service/local/repositories/releases/content/com/beolnix/marvin/marvin-api/0.2/marvin-api-0.2.jar) |
 | 0.3-SNAPSHOT | In dev | [master](https://github.com/beolnix/marvin-api/) | |
 
 ## Requirements
