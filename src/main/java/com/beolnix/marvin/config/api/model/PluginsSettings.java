@@ -16,7 +16,8 @@ import javax.xml.bind.annotation.XmlType;
         "cachePath",
         "tmpPath",
         "logsPath",
-        "dirPath"})
+        "dirPath",
+        "pollPeriod"})
 public class PluginsSettings {
     private String managerPassword;
     private String libsPath;
@@ -26,6 +27,7 @@ public class PluginsSettings {
     private String tmpPath;
     private String logsPath;
     private String dirPath;
+    private String pollPeriod;
     
 
     @Override
@@ -39,6 +41,7 @@ public class PluginsSettings {
                 ", tmpPath='" + tmpPath + '\'' +
                 ", logsPath='" + logsPath + '\'' +
                 ", dirPath='" + dirPath + '\'' +
+                ", pollPeriod='" + pollPeriod + '\'' +
                 '}';
     }
 
@@ -104,6 +107,14 @@ public class PluginsSettings {
 
     public void setDirPath(String dirPath) {
         this.dirPath = dirPath;
+    }
+
+    public String getPollPeriod() {
+        return pollPeriod;
+    }
+
+    public void setPollPeriod(String pollPeriod) {
+        this.pollPeriod = pollPeriod;
     }
 }
 
