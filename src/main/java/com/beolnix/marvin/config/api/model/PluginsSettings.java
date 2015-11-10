@@ -27,7 +27,7 @@ public class PluginsSettings {
     private String tmpPath;
     private String logsPath;
     private String dirPath;
-    private String pollPeriod;
+    private Integer pollPeriod;
     
 
     @Override
@@ -109,11 +109,11 @@ public class PluginsSettings {
         this.dirPath = dirPath;
     }
 
-    public String getPollPeriod() {
+    public Integer getPollPeriod() {
         return pollPeriod;
     }
 
-    public void setPollPeriod(String pollPeriod) {
+    public void setPollPeriod(Integer pollPeriod) {
         this.pollPeriod = pollPeriod;
     }
 }
