@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by beolnix on 17/01/16.
  */
-public class Plugin {
+public class PluginConfig {
     @XmlAttribute(required = true)
     private String name;
 
@@ -17,7 +17,7 @@ public class Plugin {
 
     @Override
     public String toString() {
-        return "Plugin{" +
+        return "PluginConfig{" +
                 "name='" + name + '\'' +
                 ", properties=" + properties +
                 '}';

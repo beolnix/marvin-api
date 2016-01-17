@@ -1,5 +1,6 @@
 package com.beolnix.marvin.plugins.api;
 
+import com.beolnix.marvin.config.api.model.PluginConfig;
 import com.beolnix.marvin.im.api.IMSessionManager;
 import com.beolnix.marvin.im.api.model.IMIncomingMessage;
 
@@ -7,7 +8,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * Basic interface for Marvin Plugin
+ * Basic interface for Marvin PluginConfig
  * Created by beolnix on 31/10/15.
  */
 public interface IMPlugin {
@@ -30,6 +31,12 @@ public interface IMPlugin {
      * @param imSessionManager
      */
     void setIMSessionManager(IMSessionManager imSessionManager);
+
+    /**
+     * Using this method Core provides pluginConfig (if any) from the configuration file
+     * @param pluginConfig
+     */
+    void setPluginConfig(PluginConfig pluginConfig);
 
     /**
      * Method should return plugin name.

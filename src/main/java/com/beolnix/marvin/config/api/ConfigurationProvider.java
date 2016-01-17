@@ -28,7 +28,7 @@ public interface ConfigurationProvider {
     Map<String, BotSettings> getBotSettings() throws ConfigurationException;
 
     /**
-     * Returns Plugin Settings exctracted from the provided configuration
+     * Returns PluginConfig Settings exctracted from the provided configuration
      * @return
      * @throws ConfigurationException
      */

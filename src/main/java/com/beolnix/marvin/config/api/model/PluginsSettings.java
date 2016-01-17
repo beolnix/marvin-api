@@ -33,7 +33,7 @@ public class PluginsSettings {
     private Integer pollPeriod;
 
     @XmlElement(name = "plugin")
-    private List<Plugin> plugins = new ArrayList<>();
+    private List<PluginConfig> pluginConfigs = new ArrayList<>();
     
 
     @Override
@@ -123,12 +123,12 @@ public class PluginsSettings {
         this.pollPeriod = pollPeriod;
     }
 
-    public List<Plugin> getPlugins() {
-        return plugins;
+    public List<PluginConfig> getPluginConfigs() {
+        return pluginConfigs;
     }
 
-    public void setPlugins(List<Plugin> plugins) {
-        this.plugins = plugins;
+    public void setPluginConfigs(List<PluginConfig> pluginConfigs) {
+        this.pluginConfigs = pluginConfigs;
     }
 }
 
