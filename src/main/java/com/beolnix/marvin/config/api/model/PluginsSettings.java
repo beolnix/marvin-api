@@ -20,7 +20,8 @@ import java.util.List;
         "tmpPath",
         "logsPath",
         "dirPath",
-        "pollPeriod"})
+        "pollPeriod",
+        "pluginConfigs"})
 public class PluginsSettings {
     private String managerPassword;
     private String libsPath;
