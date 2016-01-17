@@ -122,5 +122,13 @@ public class PluginsSettings {
     public void setPollPeriod(Integer pollPeriod) {
         this.pollPeriod = pollPeriod;
     }
+
+    public List<Plugin> getPlugins() {
+        return plugins;
+    }
+
+    public void setPlugins(List<Plugin> plugins) {
+        this.plugins = plugins;
+    }
 }
 
