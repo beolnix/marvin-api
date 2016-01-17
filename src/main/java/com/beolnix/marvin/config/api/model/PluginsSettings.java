@@ -2,7 +2,10 @@ package com.beolnix.marvin.config.api.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by beolnix on 31/10/15.
@@ -28,6 +31,9 @@ public class PluginsSettings {
     private String logsPath;
     private String dirPath;
     private Integer pollPeriod;
+
+    @XmlElement(name = "plugin")
+    private List<Plugin> plugins = new ArrayList<>();
     
 
     @Override
