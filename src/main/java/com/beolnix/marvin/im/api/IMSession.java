@@ -42,6 +42,11 @@ public interface IMSession  {
     void disconnect();
 
     /**
+     * Starts reconnection
+     */
+    void reconnect();
+
+    /**
      * Returns the current session state
      * @return
      */
