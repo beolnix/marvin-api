@@ -8,6 +8,7 @@ public enum IMSessionState {
     INITIALIZED,
     CONNECTED,
     CONNECTING,
+    RECONNECTING,
     DISCONNECTED,
     ERROR;
 }
