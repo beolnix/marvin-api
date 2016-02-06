@@ -6,7 +6,6 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.apache.log4j.Logger;
 
 /**
  * Created by beolnix on 06/02/16.
@@ -14,7 +13,7 @@ import org.apache.log4j.Logger;
 public class PluginConfig {
     private final String logsDirPath;
     private final File pluginDir;
-    private final Map<String, String> propMap = new HashMap<>();
+    private final Marep<String, String> propMap = new HashMap<>();
 
     public PluginConfig(String logsDirPath, File pluginDir, List<Property> properties) {
         this.logsDirPath = logsDirPath;
