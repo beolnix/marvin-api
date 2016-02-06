@@ -11,31 +11,8 @@ import java.util.Set;
  * Created by beolnix on 31/10/15.
  */
 public interface IMPlugin {
-    /**
-     * The name of the property available in osgi context.
-     * Logs Path is a path to a directory where plugin can write logs.
-     */
-    public final String LOGS_PATH_PARAM_NAME = "logsPath";
 
-    /**
-     * The name of the property available in osgi context
-     * Directory Path is a path to a directory where plugin can persist any data if it is required.
-     * For example it is a good place to persist data of SQLite database.
-     */
-    public final String DIRECTORY_PARAM_NAME = "dirPath";
-
-    /**
-     * During the deployment marvin core uses this method to inject imSessionManager into the instance of the plugin.
-     * It is recommend to change state to INITIALIZED once this method is executed.
-     * @param imSessionManager
-     */
-    void setIMSessionManager(IMSessionManager imSessionManager);
-
-    /**
-     * Using this method Core provides pluginProperties (if any) from the configuration file
-     * @param pluginConfig
-     */
-    void setPluginConfig(PluginConfig pluginConfig);
+    void init(PluginConfig pluginConfig, IMSessionManager imSessionManager);
 
     /**
      * Method should return plugin name.
