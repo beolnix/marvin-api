@@ -21,7 +21,7 @@ import java.util.List;
         "logsPath",
         "dirPath",
         "pollPeriod",
-        "pluginConfigs"})
+        "pluginProperties"})
 public class PluginsSettings {
     private String managerPassword;
     private String libsPath;
@@ -34,7 +34,7 @@ public class PluginsSettings {
     private Integer pollPeriod;
 
     @XmlElement(name = "plugin")
-    private List<PluginConfig> pluginConfigs = new ArrayList<>();
+    private List<PluginProperties> pluginProperties = new ArrayList<>();
     
 
     @Override
@@ -124,12 +124,12 @@ public class PluginsSettings {
         this.pollPeriod = pollPeriod;
     }
 
-    public List<PluginConfig> getPluginConfigs() {
-        return pluginConfigs;
+    public List<PluginProperties> getPluginProperties() {
+        return pluginProperties;
     }
 
-    public void setPluginConfigs(List<PluginConfig> pluginConfigs) {
-        this.pluginConfigs = pluginConfigs;
+    public void setPluginProperties(List<PluginProperties> pluginProperties) {
+        this.pluginProperties = pluginProperties;
     }
 }
 

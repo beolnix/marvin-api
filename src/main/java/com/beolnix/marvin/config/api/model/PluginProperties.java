@@ -11,7 +11,7 @@ import java.util.List;
  * Created by beolnix on 17/01/16.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-public class PluginConfig {
+public class PluginProperties {
     @XmlAttribute(required = true)
     private String name;
 
@@ -20,7 +20,7 @@ public class PluginConfig {
 
     @Override
     public String toString() {
-        return "PluginConfig{" +
+        return "PluginProperties{" +
                 "name='" + name + '\'' +
                 ", properties=" + properties +
                 '}';
