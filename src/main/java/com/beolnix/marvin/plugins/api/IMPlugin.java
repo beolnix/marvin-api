@@ -12,6 +12,12 @@ import java.util.Set;
  */
 public interface IMPlugin {
 
+    /**
+     * Method is executed by plugins manager once plugin is registered
+     * to initialize it with required dependencies
+     * @param pluginConfig
+     * @param imSessionManager
+     */
     void init(PluginConfig pluginConfig, IMSessionManager imSessionManager);
 
     /**
