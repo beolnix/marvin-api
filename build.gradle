@@ -6,6 +6,7 @@ def JAVA_VERSION = '1.8'
 ext.JAXB_VERSION = '2.1'
 ext.JUNIT_VERSION = '4.12'
 ext.GROOVY_VERSION = '2.4.4'
+ext.LOG4J_VERSION = '1.2.16'
 
 sourceCompatibility = JAVA_VERSION
 targetCompatibility = JAVA_VERSION
@@ -49,6 +50,7 @@ dependencies {
 
     compile "org.codehaus.groovy:groovy-all:${GROOVY_VERSION}"
     compile "javax.xml:jaxb-api:${JAXB_VERSION}"
+    compile "log4j:log4j:${LOG4J_VERSION}"
 
     testCompile "junit:junit:${JUNIT_VERSION}"
 
