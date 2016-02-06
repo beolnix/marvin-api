@@ -12,19 +12,19 @@ import org.apache.log4j.Logger;
  * Created by beolnix on 06/02/16.
  */
 public class PluginConfig {
-    private final Logger logger;
+    private final String logsDirPath;
     private final File pluginDir;
     private final Map<String, String> propMap = new HashMap<>();
 
-    public PluginConfig(Logger logger, File pluginDir, List<Property> properties) {
-        this.logger = logger;
+    public PluginConfig(String logsDirPath, File pluginDir, List<Property> properties) {
+        this.logsDirPath = logsDirPath;
         this.pluginDir = pluginDir;
 
         properties.forEach(p -> propMap.put(p.getName(), p.getValue()));
     }
 
-    public Logger getLogger() {
-        return logger;
+    public String getLogsDirPath() {
+        return logsDirPath;
     }
 
     public File getPluginDir() {
